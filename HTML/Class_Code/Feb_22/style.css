@@ -1,0 +1,40 @@
+/*
+
+Parts of a CSS rule
+
+1. Selector
+2. Property
+3. Value
+
+*/
+
+h1 
+{
+    color: rgba(224, 224, 224, 0.746);
+    background-color: black;
+    padding: 10px;
+    margin: 20px;
+    /*Border takes 3 values: width, style, and color*/
+    border: 3px solid rgba(206, 8, 8, 0.739);
+}
+
+/* padding pushed children in while margin pushes siblings away*/
+
+/*Using an ID to change a Specific instance of a tag*/
+#secondaryTitle
+{
+    color: rgba(255, 0, 0, 0.746);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 20px;
+    /*Border takes 3 values: width, style, and color*/
+    border: 3px solid rgba(31, 0, 131, 0.739);
+}
+
+/*Using a class to change every instance of a certain tag with that class*/
+.radioLabel
+{
+    font-family:monospace;
+    font-size: xx-large;
+}
+

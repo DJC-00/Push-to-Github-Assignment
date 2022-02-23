@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms, Tables, and CSS</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Forms, Tables, and CSS!</h1>
+    <h1 id="secondaryTitle">Forms, Tables, and CSS again, but in different colors!</h1>
+    <!-- ID's must be unique -->
     <h2><em>Forms are how we get information from the user</em></h2>
     <p>Forms consist of form controls (textinputs, drop down menus, etc.) and labels telling the user what each input is for</p>
     <p>Forms must start and end with the form tag.</p>
     <form>
-        <!-- Label and text input are default inline elements -->
-        <!-- Divs are default block elements -->
+                                                                                <!-- Label and text input are default inline elements -->
+                                                                                <!-- Divs are default block elements -->
         <div>
         </div>
             <label for="first_name">First Name:</label>
@@ -23,19 +26,19 @@
             <input type="text" name="last_name" id="last_name">
         </div>
 
-        <!-- All radio buttons will share the same name attribute
-            Each pair of radio and label will share ID, value and for -->
+                                                                                <!-- All radio buttons will share the same name attribute
+                                                                                    Each pair of radio and label will share ID, value and for -->
 
         <div>
             <p>What is your favorite cartoon?</p>
-            <input type="radio" name="cartoon" id="my_hero" value="my_hero">    <!-- Button portion of radio button -->
-            <label for="my_hero">My Hero Academia</label>                       <!-- Text portion of radio button -->
+            <input class="cartoonButton" type="radio" name="cartoon" id="my_hero" value="my_hero">    <!-- Button portion of radio button -->
+            <label class="radioLabel" for="my_hero">My Hero Academia</label>    <!-- Text portion of radio button -->
             <input type="radio" name="cartoon" value="futurama">
-            <label for="futurama">Futurama</label>
+            <label class="radioLabel" for="futurama">Futurama</label>
             <input type="radio" name="cartoon" value="bojack">
-            <label for="bojack">Bojack Horseman</label>
+            <label class="radioLabel" for="bojack">Bojack Horseman</label>
             <input type="radio" name="cartoon" value="gumball">
-            <label for="gumball">The amazing world of Gumball</label>
+            <label class="radioLabel" for="gumball">The amazing world of Gumball</label>
         </div>
         <br>
         <div>
@@ -50,9 +53,29 @@
         </div>
         <br>
         <div>
-            <!-- Make sure input is inside form tag so -->
+                                                                                <!-- Make sure input is inside form tag so -->
             <input type="submit" value="SUBMIT">
         </div>
     </form>
+    <br>
+    <table>
+        <thead><td>First Name</td><td>Last Name</td><td>Favorite Movie</td></thead>
+            <tr>
+                <td>Kermit</td>
+                <td>The Frog</td>
+                <td>Game of Death</td>
+            </tr>
+            <tr>
+                <td>Kermit</td>
+                <td>The Frog</td>
+                <td>Game of Death</td>
+            </tr>
+            <tr>
+                <td>Kermit</td>
+                <td>The Frog</td>
+                <td>Game of Death</td>
+            </tr>
+        <tbody></tbody>
+    </table>
 </body>
 </html>
