@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 class="a">Registration Form</h1>
+    <h3 class="gold">Please fill out this form in order to regerster for the Coding-Dojo ELITE CLUB</h3>
+    <form>
+        <div>
+            <label class="inputAlign" for="firstName">First Name*</label><input type="text" name="firstName"><br>
+            <label class="inputAlign" for="lastName">Last Name*</label><input type="text" name="lastName"><br>
+            <label class="inputAlign" for="emailAddress">Email Address*</label><input type="text" name="emailAddress"><br>
+            <label class="inputAlign" for="Password">Password*</label><input type="password" name="Password"><br>
+            <label class="inputAlign" for="ConfirmPassword">Confirm Password*</label><input type="password" name="ConfirmPassword"><br>
+            <label class="inputAlign" for="Birthday">Date of Birth</label><input type="date" name="Birthday" style="width: 172px;">
+        </div>
+
+        <div>
+            <p>Gender Identity:</p>
+            <input type="radio" name="gender" id="my_hero" value="male">    <!-- Button portion of radio button -->
+            <label class="radioLabel" for="male">Male</label>               <!-- Text portion of radio button -->
+            <input type="radio" name="gender" id="female" value="female">
+            <label class="radioLabel" for="female">Female</label>
+            <input type="radio" name="gender" id="nonBinary" value="nonBinary">
+            <label class="radioLabel" for="nonBinary">Non-Binary</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label class="radioLabel" for="other">Other: <input type="text" style="width: 120px;" name="customGender"></label>
+            <input type="radio" name="gender" id="noAnswer" value="noAnswer">
+            <label class="radioLabel" for="noAnswer">Prefer not to answer</label>
+        </div>
+
+        <div>
+            <p>Tell us about yourself:</p>
+            <textarea name="userDescription" cols="80" rows="5">Write Here...</textarea>
+        </div>
+
+        <div class="extraPad">
+            <label>Choose your favorite programming language: </label>
+            <select name="programmingLanguage" style="width: 120px;">
+                <option selected disabled hidden></option>
+                <option value="python">Python</option>
+                <option value="javaScript">JavaScript</option>
+                <option value="c++">C++</option>
+                <option value="ruby">Ruby</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="extraPad">
+            <input type="checkbox" name="emailUpdates" id="optIn">
+            <label for="optIn">Send me updates regarding the coding dojo ELITE CLUB.</label>
+        </div>
+        <div class="extraPad">
+        <input type="submit" value="Submit Registration">
+        </div>
+    </form>
+</body>
+</html>
