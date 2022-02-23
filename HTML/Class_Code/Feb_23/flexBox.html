@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <link rel="stylesheet" href="./flexStyle.css" />
+</head>
+
+<body>
+        <!--Semantic Element Tab-->
+        <!--Step 1 Identify the items that must be side by side-->
+        <!--Step 2 Look for a common direct parent, or create one-->
+    <nav>
+        <div class="container flex">
+            <h1 class="mb">FlexBox Code</h1>
+            <ul class="flex">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Legal</li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <h2 class="mb">Flex parents tell their children how to behave</h2>
+        <h2 class="mb">Justify-content governs the horizontal alignment of children</h2>
+        <ul>
+            <li>Center - Centers all children</li>
+            <li>Space Between - Equal space between all children starting at parent edge</li>
+            <li>Space Even - Equal space between all children and all edges</li>
+            <li>Space Around -</li>
+        </ul>
+        <p class="mb">Space Evenly</p>
+        <div class="parent">
+            <div class="children">
+                <h2>1</h2>
+            </div>
+            <div class="children">
+                <h2>2</h2>
+            </div>
+            <div class="children">
+                <h2>3</h2>
+            </div>
+            <div class="children">
+                <h2>4</h2>
+            </div>
+        </div>
+        <p>Space Between</p>
+        <div class="parent2">
+            <div class="children">
+                <h2>1</h2>
+            </div>
+            <div class="children">
+                <h2>2</h2>
+            </div>
+            <div class="children">
+                <h2>3</h2>
+            </div>
+            <div class="children">
+                <h2>4</h2>
+            </div>
+        </div>
+        <p>Space Around</p>
+        <div class="parent3">
+            <div class="children">
+                <h2>1</h2>
+            </div>
+            <div class="children">
+                <h2>2</h2>
+            </div>
+            <div class="children">
+                <h2>3</h2>
+            </div>
+            <div class="children">
+                <h2>4</h2>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

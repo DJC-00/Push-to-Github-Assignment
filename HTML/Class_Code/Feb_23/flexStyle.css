@@ -1,0 +1,80 @@
+/* CSS Reset */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+h1
+{
+    color: blueviolet;
+}
+
+.children
+{
+    border: solid rgb(127, 0, 207) 1px;
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+.parent
+{
+    display: flex;
+    justify-content:space-evenly;    /*Horizontal Axis*/
+    align-items: center;        /*Vertical Axis*/
+    border: solid rgb(0, 0, 0) 1px;
+    min-height: 125px;
+}
+
+.parent2
+{
+    display: flex;
+    justify-content:space-between;    /*Horizontal Axis*/
+    align-items: center;        /*Vertical Axis*/
+    border: solid rgb(0, 0, 0) 1px;
+    min-height: 125px;
+}
+
+.parent3
+{
+    display: flex;
+    justify-content:space-around;    /*Horizontal Axis*/
+    align-items: center;        /*Vertical Axis*/
+    border: solid rgb(0, 0, 0) 1px;
+    min-height: 125px;
+}
+
+nav
+{
+    background-color: darkorange;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.container
+{
+    width:70%;
+    margin: 0 auto; /*Easy Centering Shortcut*/
+}
+
+.flex
+{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul /*Compound Selector, Selects all ul elements that live inside the nav element*/
+{
+    list-style: none;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mb
+{
+    margin-bottom: 20px;
+}
