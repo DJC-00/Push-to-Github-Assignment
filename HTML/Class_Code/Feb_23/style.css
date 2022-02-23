@@ -1,0 +1,17 @@
+h1
+{
+    color: forestgreen;
+}
+
+.boxModel
+{
+    width:200px;
+    background-color: darkorange;
+    padding: 20px 100px;
+    /*1 value = 4 sides, 2 values = top/bottom and left/right,
+      3 values = top, left/right, and bottom, 4 values = Top, Right, Bottom, Left*/
+    border: double cornflowerblue 5px;
+    margin: 40px;
+    display: inline-block;
+    text-align: center;
+}
