@@ -1,0 +1,38 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.row 
+{
+    display: flex;
+}
+
+.col 
+{
+    background-color: rgb(82, 0, 190);
+    color: white;
+    padding:  30px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.flex1
+{
+    flex: 1;
+}
+.flex2
+{
+    flex: 2;
+}
+.flex3
+{
+    flex: 3;
+}
+
+.rMar
+{
+    margin-right: 20px;
+}
