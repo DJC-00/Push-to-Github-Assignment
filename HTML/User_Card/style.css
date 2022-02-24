@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width:70%;
+    margin: 0 auto; /*Easy Centering Shortcut*/
+}
+
+profile
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#profilePic
+{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 30px;
+    top: 40px;
+}
+
+#profileName
+{
+    padding-top: 40px;
+    padding-left: 20px;
+    font-size: large;
+}
+
+#profileLocation
+{
+    padding: 20px 0px 0px 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap:10px;
+}
+
+#profileBlurb
+{
+    padding: 20px 0px 0px 20px;
+    max-width: 50%;
+}
+
+#profileEdit
+{
+    padding: 20px 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap:10px;
+}
+
+.profBox
+{
+    margin: 0 auto;
+    width: 700px;
+}
+
+.topBar
+{
+    background-color: rgb(2, 140, 175);
+    height:80px;
+    width: 700px;
+
+}
+
+.bottomBar
+{
+    background-color: white;
+
+    width: 700px;
+
+}
+
+
+
+
+/* Utility Classes */
+
+.flex
+{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.triBorder
+{
+    border: grey 1px solid;
+    border-top: none;
+}
+
+.pad
+{
+    padding-top: 40px;
+}
