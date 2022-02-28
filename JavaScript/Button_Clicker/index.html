@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav flex stdPadding">
+            <h1>Dojonary</h1>
+            <ul class="flex" style="gap: 5px;">
+                <input type="text">
+                <button>Search</button>
+            </ul>
+            <button id="loginButton" onclick="loginLogout()" style="width: 80px;">Login</button>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="mainContainer flex">
+            <div class="leftCol tPadding bPadding">
+                <div class="blackBorder card bMargin">
+                    <div class="flex" style="align-items: center;">
+                        <div class=" card flex1 textCenter tPadding bPadding">
+                            <h2>tempCard1</h2>
+                            <p class="tPadding">Noun</p>
+                            <p class="tPadding bPadding">Plural: Ninjas</p>
+                            <button onclick="likePost1(this); likeAlert()" id="likeButton1" class="likeButton"><p>0 Likes</p></button>
+                        </div>
+                        <div class=" card flex2">
+                            <p>Lorem, ipsum dolor sit amet consectetur" adipisicing elit. Provident reiciendis modi, dolores earum amet esse, facere quam laborum quae accusamus nostrum reprehenderit, ea aliquid ipsam incidunt omnis eius tempore ipsa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blackBorder card t">
+                    <div class="flex" style="align-items: center;">
+                        <div class=" card flex1 textCenter tPadding bPadding">
+                            <h2>tempCard2</h2>
+                            <p class="tPadding">Noun</p>
+                            <p class="tPadding bPadding">Plural: Ninjas</p>
+                            <button onclick="likePost2(this); likeAlert()" id="likeButton2" class="likeButton"><p>0 Likes</p></button>
+                        </div>
+                        <div class=" card flex2">
+                            <p>Lorem, ipsum dolor sit amet consectetur" adipisicing elit. Provident reiciendis modi, dolores earum amet esse, facere quam laborum quae accusamus nostrum reprehenderit, ea aliquid ipsam incidunt omnis eius tempore ipsa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightCol" style="padding: 20px 0px 20px 20px;">
+                <div id="definitionContent" class="blackBorder card textCenter">
+                    <h2 class="tPadding">Define Dojonary</h2>
+                    <input class="tPadding tMargin bMargin" type="text" value="Enter Definition..." id="dojoDefText">
+                    <button id="defineButton" onclick="redefine()" class="defineButton tMargin bMargin " >Add Definition</button>
+                    <p id="dojonaryDef" class="tPadding card" style="display: none;"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
