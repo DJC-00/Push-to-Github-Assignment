@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav flex stdPadding">
+            <h1>Network</h1>
+        </div>
+        <h1 class="textCenter tPadding">Your Feed</h1>
+    </nav>
+    <main class="container">
+        <div class="mainContainer flex">
+            <div class="leftCol tPadding bPadding">
+                <div id="definitionContent" class="blackBorder card textCenter stdPadding">
+                    <img src="./assets/Profile_Placeholder.png" alt="" class="profPic">
+                    <p class="tPadding"><a href="#">Add an Avatar</a></p>
+                    <h2 class="tPadding">James Doe</h2>
+                </div>
+            </div>
+            <div class="rightCol stdPadding">
+                <div class="blackBorder card bPadding bMargin">
+                    <div class="flex1 tPadding bPadding">
+                        <div class="flex" style="justify-content: space-between; align-items: center;">
+                            <h2 class="textPadding" >tempCard2</h2>
+                            <ul class="flex textPadding stdGap listStyleNone" style="align-items: center;">
+                                <li><p id="likeCount1" class="hidden">likes</li>
+                                <li><button onclick="likePost1(likeCount1)" id="likeButton1" class="likeButton">Like</button></li>
+                            </ul>
+                        </div>
+                        <p class="tPadding textPadding">Lorem, ipsum dolor sit amet consectetur" adipisicing elit. Provident reiciendis modi, dolores earum amet esse, facere quam laborum quae accusamus nostrum reprehenderit, ea aliquid ipsam incidunt omnis eius tempore ipsa.</p>
+                    </div>
+                </div>
+                <div class="blackBorder card bPadding bMargin">
+                    <div class="flex1 tPadding bPadding">
+                        <div class="flex" style="justify-content: space-between; align-items: center;">
+                            <h2 class="textPadding" >tempCard2</h2>
+                            <ul class="flex textPadding stdGap listStyleNone" style="align-items: center;">
+                                <li><p id="likeCount2" class="hidden">likes</li>
+                                <li><button onclick="likePost2(likeCount2)" id="likeButton2" class="likeButton" value="1">Like</button></li>
+                            </ul>
+                        </div>
+                        <p class="tPadding textPadding">Lorem, ipsum dolor sit amet consectetur" adipisicing elit. Provident reiciendis modi, dolores earum amet esse, facere quam laborum quae accusamus nostrum reprehenderit, ea aliquid ipsam incidunt omnis eius tempore ipsa.</p>
+                    </div>
+                </div>
+                <div class="blackBorder card bPadding bMargin">
+                    <div class="flex1 tPadding bPadding">
+                        <div class="flex" style="justify-content: space-between; align-items: center;">
+                            <h2 class="textPadding" >tempCard2</h2>
+                            <ul class="flex textPadding stdGap listStyleNone" style="align-items: center;">
+                                <li><p id="likeCount3" class="hidden">likes</li>
+                                <li><button onclick="likePost3(likeCount3)" id="likeButton3" class="likeButton">Like</button></li>
+                            </ul>
+                        </div>
+                        <p class="tPadding textPadding">Lorem, ipsum dolor sit amet consectetur" adipisicing elit. Provident reiciendis modi, dolores earum amet esse, facere quam laborum quae accusamus nostrum reprehenderit, ea aliquid ipsam incidunt omnis eius tempore ipsa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

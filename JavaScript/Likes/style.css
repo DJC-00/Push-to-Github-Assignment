@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav
@@ -10,7 +11,6 @@ nav
     min-height: 50px;
     margin-bottom: 20px;
     margin: 0 auto; /*Easy Centering Shortcut*/
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -51,29 +51,32 @@ main
 
 }
 
-.rightCol
+.leftCol
 {
     flex:1;
     margin: 0 auto;
 }
 
-.leftCol
+.rightCol
 {
-    flex:2;
+    flex:3;
     margin: 0 auto;
 }
 
 .card
 {
     min-height: 100px;
+    box-shadow: 2px 2px rgb(0, 0, 0);
 }
 
 .likeButton
 {
-    background-color: yellow;
-    height: 50px;
-    width: 80px;
+    background-color: #f3c94e;
+    height: 30px;
+    width: 50px;
     text-align: center;
+    font-weight: bold;
+    box-shadow: 2px 2px rgb(0, 0, 0);
 }
 
 .defineButton
@@ -81,6 +84,7 @@ main
     background-color: greenyellow;
     width: 80%;
     height: 40px;
+    box-shadow: 2px 2px rgb(0, 0, 0);
 }
 
 .loginButton
@@ -91,6 +95,12 @@ main
 .blackBorder
 {
     border: 2px solid black;
+}
+
+.profPic
+{
+    width: 100px;
+    height:auto;
 }
 
 .flex
@@ -113,6 +123,16 @@ main
     padding-bottom: 20px;
 }
 
+.lPadding
+{
+    padding-left: 20px;
+}
+
+.rPadding
+{
+    padding-right: 20px;
+}
+
 .stdMargin
 {
     margin: 20px;
@@ -128,6 +148,16 @@ main
     margin-bottom: 20px;
 }
 
+.lMargin
+{
+    margin-left: 10px;
+}
+
+.rMargin
+{
+    margin-right: 20px;
+}
+
 .flex1
 {
     flex:1;
@@ -141,4 +171,25 @@ main
 .textCenter
 {
     text-align: center;
+}
+
+.textPadding
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.stdGap
+{
+    gap: 40px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.listStyleNone
+{
+    list-style: none;
 }
