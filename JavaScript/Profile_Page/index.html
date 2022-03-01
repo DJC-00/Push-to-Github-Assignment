@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav container stdPadding">
+            <ul class="nav-links">
+                <li>
+                    <h1 class="nav-title">Profile</h1>
+                </li>
+                <li><a class="menu" href="#">Home</a></li>
+                <li><a class="menu active" href="#">My Profile</a></li>
+                <li><a class="menu" href="#">Find Connections</a></li>
+            </ul>
+            <button class="btn">Sign Out</button>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="mainContainer">
+            <div class="colContainer flex">
+                <div class="leftCol stdMargin">
+                    <div class="card">
+                        <div class="colorBanner" style="height: 70px">
+                            <img id="profilePic" src="./assets/images/DJ_Castle.jpg" alt="" />
+                        </div>
+                        <div class="triBorder" id="profContent">
+                            <h2 class="stdPadding" id="profileName">
+                                DJ Castle
+                            </h2>
+                            <div class="stdMargin stdGap flex" id="profileLocation">
+                                <img src="./assets/icons/map-marker.png" alt="" style="width: 15px; height: auto" />
+                                <p>Missouri</p>
+                            </div>
+                            <p class="stdMargin" id="profileBlurb">
+                                Student at the Dojo
+                            </p>
+                            <div class="stdMargin stdGap flex" id="profileEdit">
+                                <img src="./assets/icons/gear.png" alt="" style="width: 20px; height: auto" />
+                                <p><a href="#" id="editProf" onclick="editProf(profileName)">Edit Profile</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="colorBanner whiteTxt blkBg stdGap spaceA banner" style="padding-bottom: 10px;">
+                            Education
+                        </h3>
+                        <div class="triBorder">
+                            <div>
+                                <h3 class="stdPadding" style="padding-top: 10px;">School A</h3>
+                                <p class="triMargin timeText">1999 - 2012</p>
+                                <p class="triMargin">Regular School</p>
+                            </div>
+                            <div>
+                                <h3 class="stdMargin">School A</h3>
+                                <p class="triMargin timeText">1999 - 2012</p>
+                                <p class="triMargin">Regular School</p>
+                            </div>
+                            <div>
+                                <h3 class="stdMargin">School A</h3>
+                                <p class="triMargin timeText">1999 - 2012</p>
+                                <p class="triMargin">Regular School</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightCol stdMargin">
+                    <div class="card">
+                        <ul class="flex colorBanner blkBg stdGap spaceA banner">
+                            <li>
+                                <h3 class="bubble colorBanner" id="connReq">2</h3>
+                            </li>
+                            <li>
+                                <h3 class="whiteTxt colorBanner blkBg" style="margin: 0 auto">
+                                    Connection Requests
+                                </h3>
+                            </li>
+                        </ul>
+                        <div class="triBorder">
+                            <div class="flex spaceB tri" id="toddsCard">
+                                <ul class="flex plainList userBar stdGap">
+                                    <li>
+                                        <img class="smallPic" src="./assets/images/todd-s.jpg" alt="" />
+                                    </li>
+                                    <li>Todd E</li>
+                                </ul>
+                                <ul class="flex stdMargin plainList userBar stdGap">
+                                    <li>
+                                        <img class="smallIcon" src="./assets/icons/accept-circle.png" alt="Accept" onclick="addConnect(totalCon,connReq,toddsCard)"/>
+                                    </li>
+                                    <li>
+                                        <img class="smallIcon" src="./assets/icons/close-circle.png" alt="Deny" onclick="denyConnect(connReq,toddsCard)"/>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex spaceB" id="PhilsCard">
+                                <ul class="flex stdMargin plainList userBar stdGap">
+                                    <li>
+                                        <img class="smallPic" src="./assets/images//phil-s.jpg" alt="" />
+                                    </li>
+                                    <li>Phil K</li>
+                                </ul>
+                                <ul class="flex triMargin plainList userBar stdGap">
+                                    <li>
+                                        <img class="smallIcon" src="./assets/icons/accept-circle.png" alt="Accept" onclick="addConnect(totalCon,connReq,PhilsCard)" />
+                                    </li>
+                                    <li>
+                                        <img class="smallIcon" src="./assets/icons/close-circle.png" alt="Deny" onclick="denyConnect(connReq,PhilsCard)"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <ul class=" flex colorBanner blkBg stdGap spaceA banner ">
+                            <li>
+                                <h3 class="bubble colorBanner" id="totalCon">500</h3>
+                            </li>
+                            <li>
+                                <h3 class="whiteTxt colorBanner blkBg" style="margin: 0 auto">
+                                    Your Connections
+                                </h3>
+                            </li>
+                        </ul>
+                        <div class="triBorder">
+                            <div class="flex spaceB">
+                                <ul class="flex plainList userBar stdGap">
+                                    <li>
+                                        <img class="smallPic" src="./assets/images/adrien-s.jpg" alt="" />
+                                    </li>
+                                    <li>Adrien D</li>
+                                </ul>
+                            </div>
+                            <div class="flex spaceB">
+                                <ul class="flex plainList userBar stdGap">
+                                    <li>
+                                        <img class="smallPic" src="./assets/images/anne-s.jpg" alt="" />
+                                    </li>
+                                    <li>Anne J</li>
+                                </ul>
+                            </div>
+                            <div class="flex spaceB">
+                                <ul class="flex plainList userBar stdGap">
+                                    <li>
+                                        <img class="smallPic" src="./assets/images/alayne-s.jpg" alt="" />
+                                    </li>
+                                    <li>Alayne T</li>
+                                </ul>
+                            </div>
+                            <div class="flex spaceB">
+                                <ul class="flex plainList userBar stdGap">
+                                    <li>
+                                        <img class="smallPic" src="./assets/images/arry-s.jpg" alt="" />
+                                    </li>
+                                    <li>Arry Y</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="stdPadding stdGap triBorder" style="padding-top:10px">
+                            <p><a href="#">View More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
