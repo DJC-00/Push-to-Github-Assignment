@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container flex">
+            <h1>Test Headder</h1>
+            <ul class="flex">
+                <li id="sanJose" class="hidden" onclick="updateWeather(this); alert('Loading Weather Report, Please Wait')">San Jose</li>
+                <li id="Burbank" onclick="updateWeather(this); alert('Loading Weather Report, Please Wait')">Burbank</li>
+                <li id="Chicago" onclick="updateWeather(this); alert('Loading Weather Report, Please Wait')">Chicago</li>
+                <li id="Dallas" onclick="updateWeather(this); alert('Loading Weather Report, Please Wait')">Dallas</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="mainHeader flex">
+            <h2 id="cityNameHeader">San Jose</h2>
+            <form>
+                <label for="tempUnit">Show Temperature In: </label>
+                <select name="tempUnit" id="tempUnit" onchange="changeUnit()">
+                    <option value="C">C°</option>
+                    <option value="F">F°</option>
+                </select>
+            </form>
+        </div>
+        <hr>
+        <div class="days flex" id="forecast">
+            <div class="dayInfo" id="today">
+                <h3>Today</h3>
+                <img src="./Assets/Pictures/some_rain.png" alt="">
+                <p>Some rain</p>
+                <div class="tempHigh-Low flex">
+                    <span class="high">24°</span>
+                    <span class="low">18°</span>
+                </div>
+            </div>
+            <div class="dayInfo" id="tomorrow">
+                <h3>Tomorrow</h3>
+                <img src="./Assets/Pictures/some_sun.png" alt="">
+                <p>Some Sun</p>
+                <div class="tempHigh-Low flex">
+                    <span class="high">24°</span>
+                    <span class="low">18°</span>
+                </div>
+            </div>
+            <div class="dayInfo" id="friday">
+                <h3>Friday</h3>
+                <img src="./Assets/Pictures/some_clouds.png" alt="">
+                <p>Some Clouds</p>
+                <div class="tempHigh-Low flex">
+                    <span class="high">24°</span>
+                    <span class="low">18°</span>
+                </div>
+            </div>
+            <div class="dayInfo" id="saturday">
+                <h3>Saturday</h3>
+                <img src="./Assets/Pictures/some_sun.png" alt="">
+                <p>Some Sun</p>
+                <div class="tempHigh-Low flex">
+                    <span class="high">24°</span>
+                    <span class="low">18°</span>
+                </div>
+            </div>
+        </div>
+        <div class="cookies flex" id="cookieBox">
+            <img src="./Assets/Pictures/cookie.png" alt="Cookie">
+            <div class="cookieCopy">
+                <h4>STOP! Cookie Time!</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae aliquid minus est ullam nihil, nam sint ut explicabo aut, dolore tenetur laudantium, officiis minima <a href="#">doloremque...</a></p>
+            </div>
+            <button onclick="hideCookies(cookieBox)">I Accept</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

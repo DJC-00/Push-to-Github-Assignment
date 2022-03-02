@@ -1,0 +1,148 @@
+/* ▼------------------ Font -----------------▼ */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+/* ▲------------------ Font -----------------▲ */
+/* //////////////////////////////////////////// */
+/* ▼----------------- Reset -----------------▼ */
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* ▲----------------- Reset -----------------▲ */
+/* //////////////////////////////////////////// */
+/* ▼------------------ Nav ------------------▼ */
+
+nav
+{
+    background-color: #9fc5f8;
+    padding: .5em 0em;
+    color:white;
+}
+
+nav ul
+{
+    list-style: none;
+}
+
+nav h1
+{
+    font-size: 2.5em;
+}
+
+/* ▲------------------ Nav ------------------▲ */
+/* //////////////////////////////////////////// */
+/* ▼------------------ Main -----------------▼ */
+
+main
+{
+    /* background-color: aquamarine; */
+    min-height: 400px;
+}
+
+.mainHeader
+{
+    /* background-color: rgb(144, 94, 224); */
+    padding: 1rem 0rem;
+}
+
+.container
+{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.days
+{
+
+    padding: 1rem 0rem 0rem;
+}
+
+.dayInfo
+{
+    flex:1;
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 1em;
+}
+
+.dayInfo img
+{
+   width: 150px;
+   border-radius: 50%;
+}
+
+.dayInfo>*
+{
+    margin-bottom: 1rem;
+}
+
+.tempHigh-Low
+{
+    padding: 0em 1em;
+}
+
+.high
+{
+    color: rgb(224, 0, 0);
+}
+
+.low
+{
+    color: blue;
+}
+
+.high, .low
+{
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+
+/* ▲------------------ Main -----------------▲ */
+/* //////////////////////////////////////////// */
+/* ▼----------------- Cookies ---------------▼ */
+
+.cookies
+{
+    background-color: #eeeeee;
+    border: 2px black solid;
+    margin-top: .5rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 800px;
+}
+
+.cookies button
+{
+    white-space: nowrap;
+    background-color: #9fc5f8;
+    padding: .3em .6em;
+    box-shadow: 2px 2px black;
+}
+
+/* ▲----------------- Cookies ---------------▲ */
+/* //////////////////////////////////////////// */
+/* ▼------------------ Util -----------------▼ */
+
+.flex
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.hidden
+{
+    display:none;
+}
+
+/* ▲------------------ Util -----------------▲ */
